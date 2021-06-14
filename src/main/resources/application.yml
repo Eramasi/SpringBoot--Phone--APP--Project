@@ -1,0 +1,21 @@
+server:
+  port: 9495
+  servlet:
+    context-path: '/PhoneBook '
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: welcome143
+    url: jdbc:mysql://localhost:3306/Product
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  mvc:
+    view:
+      prefix: /Views/
+      suffix: .jsp
